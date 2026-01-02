@@ -6,6 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    .carousel {
+  position: relative;
+  max-width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -103,9 +122,9 @@
   <p>Built for Off-Road. Ready for Adventure.</p>
 </header>
 <section class="carousel">
-  <img src="slide1.jpg" class="slide active">
-  <img src="slide2.jpg" class="slide">
-  <img src="slide3.jpg" class="slide">
+  <img src="carousel_1.png" class="slide active">
+  <img src="carousel_2.png" class="slide">
+  <img src="carousel_3.png" class="slide">
 </section>
 <section class="hero">
   <h2>YOUR 4x4, FULLY ARMORED</h2>
